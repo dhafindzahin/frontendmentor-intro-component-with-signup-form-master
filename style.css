@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
 	--red: hsl(0, 100%, 74%);
 	--green: hsl(154, 59%, 51%);
@@ -6,13 +8,59 @@
 	--grayish-blue: hsl(246, 25%, 77%);
 }
 
-body {
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body {
 	background-color: var(--red);
 	background-image: url(images/bg-intro-mobile.png);
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+
+.header {
+	color: white;
+	margin-top: 80px;
+}
+
+.header > h1 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.header > p {
+	text-align: center;
+	margin-top: 12px;
 }
 
 @media (min-width: 748px) {
-	body {
+	.body {
 		background-image: url(images/bg-intro-desktop.png);
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		padding: 96px;
+	}
+
+	.header {
+		margin: 0;
+	}
+
+	.header > h1 {
+		font-size: 3rem;
+		text-align: left;
+		width: 13ch;
+	}
+
+	.header > p {
+		text-align: left;
+		width: 56ch;
 	}
 }
