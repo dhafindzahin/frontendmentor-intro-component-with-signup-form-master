@@ -20,7 +20,7 @@
 	font-family: "Poppins", sans-serif;
 	display: flex;
 	flex-direction: column;
-	padding: 8px;
+	padding: 8px 28px;
 }
 
 .header {
@@ -45,6 +45,18 @@
 	width: 36ch;
 }
 
+.promotion {
+	background-color: var(--blue);
+	padding: 20px 28px;
+	margin-top: 64px;
+	border-radius: 8px;
+	text-align: center;
+	text-wrap: pretty;
+	color: white;
+	box-shadow: hsl(0, 0%, 0%, 20%) 0 8px;
+	margin-bottom: 36px;
+}
+
 @media (min-width: 1024px) {
 	.body {
 		background-image: url(images/bg-intro-desktop.png);
@@ -58,6 +70,7 @@
 	.header {
 		margin: 0;
 		align-items: start;
+		width: 50vw;
 	}
 
 	.header > h1 {
@@ -68,7 +81,11 @@
 
 	.header > p {
 		text-align: left;
-		width: 56ch;
+		width: 52ch;
 		padding: 0;
+	}
+
+	.main {
+		width: 50vw;
 	}
 }
