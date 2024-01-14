@@ -26,20 +26,26 @@
 .header {
 	color: white;
 	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .header > h1 {
 	font-size: 1.8rem;
 	font-weight: 700;
 	text-align: center;
+	width: 16ch;
 }
 
 .header > p {
 	text-align: center;
-	margin-top: 12px;
+	margin-top: 20px;
+	padding: 0 24px;
+	width: 36ch;
 }
 
-@media (min-width: 748px) {
+@media (min-width: 1024px) {
 	.body {
 		background-image: url(images/bg-intro-desktop.png);
 		flex-direction: row;
@@ -51,6 +57,7 @@
 
 	.header {
 		margin: 0;
+		align-items: start;
 	}
 
 	.header > h1 {
@@ -62,5 +69,6 @@
 	.header > p {
 		text-align: left;
 		width: 56ch;
+		padding: 0;
 	}
 }
