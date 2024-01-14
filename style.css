@@ -64,7 +64,7 @@
 		justify-content: center;
 		align-items: center;
 		min-height: 100vh;
-		padding: 96px;
+		padding: 24px;
 	}
 
 	.header {
@@ -87,5 +87,11 @@
 
 	.main {
 		width: 50vw;
+	}
+}
+
+@media (min-width: 1440px) {
+	.body {
+		padding: 152px;
 	}
 }
