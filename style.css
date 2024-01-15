@@ -184,3 +184,21 @@
 		padding: 0 152px;
 	}
 }
+
+@media (min-width: 2560px) {
+	.body {
+		padding: 0 500px;
+	}
+
+	.header > h1 {
+		font-size: 5rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	.form-footer > p {
+		font-size: 1rem;
+	}
+}
