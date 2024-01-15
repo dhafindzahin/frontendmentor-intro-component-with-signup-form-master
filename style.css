@@ -4,7 +4,7 @@
 	--red: hsl(0, 100%, 74%);
 	--green: hsl(154, 59%, 51%);
 	--blue: hsl(248, 32%, 49%);
-	--dark-blue: hsl(249, 10%, 26%);
+	--dark-blue: hsl(249, 10%, 26%, 25%);
 	--grayish-blue: hsl(246, 25%, 77%);
 }
 
@@ -58,14 +58,14 @@
 	text-align: center;
 	text-wrap: pretty;
 	color: white;
-	box-shadow: hsl(0, 0%, 0%, 20%) 0 8px;
+	box-shadow: var(--dark-blue) 0 8px;
 }
 
 .form-container {
 	background-color: white;
 	padding: 28px;
 	border-radius: 12px;
-	box-shadow: hsl(0, 0%, 0%, 20%) 0 8px;
+	box-shadow: var(--dark-blue) 0 8px;
 	margin-top: 36px;
 	margin-bottom: 36px;
 }
