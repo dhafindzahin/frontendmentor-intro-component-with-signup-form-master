@@ -56,6 +56,10 @@
 	box-shadow: hsl(0, 0%, 0%, 20%) 0 8px;
 }
 
+.main {
+	max-width: 760px;
+}
+
 .form-container {
 	background-color: white;
 	padding: 28px;
@@ -149,7 +153,7 @@
 	.header > h1 {
 		font-size: 3rem;
 		text-align: left;
-		width: 13ch;
+		width: 20ch;
 	}
 
 	.header > p {
