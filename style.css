@@ -115,10 +115,6 @@
 	font-size: 1rem;
 }
 
-.form-container input:invalid::after {
-	content: url(images/icon-error.svg);
-}
-
 .form-container em {
 	display: none;
 }
