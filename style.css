@@ -120,7 +120,6 @@
 	font-size: 1rem;
 	font-weight: 600;
 	box-shadow: hsl(154, 50%, 50%) 0 4px;
-	letter-spacing: 0.05rem;
 	cursor: pointer;
 }
 
@@ -181,6 +180,10 @@
 
 	.form-container {
 		margin-bottom: 0;
+	}
+
+	.form-container button {
+		letter-spacing: 0.1rem;
 	}
 
 	.form-footer {
