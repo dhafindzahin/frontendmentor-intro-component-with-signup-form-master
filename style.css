@@ -78,6 +78,7 @@
 
 .form-container li {
 	list-style: none;
+	position: relative;
 }
 
 /* to hide label visually but still be read by screen reader */
@@ -97,6 +98,7 @@
 	padding: 16px 20px;
 	font-weight: 600;
 	border: 2px solid var(--grayish-blue);
+	display: block;
 }
 
 .form-container input:focus {
@@ -104,9 +106,37 @@
 	border-color: var(--blue);
 }
 
+.form-container input:invalid {
+	border-color: var(--red);
+}
+
 .form-container input::placeholder {
 	color: var(--grayish-blue);
 	font-size: 1rem;
+}
+
+.form-container input:invalid::after {
+	content: url(images/icon-error.svg);
+}
+
+.form-container em {
+	display: none;
+}
+
+.form-container input:invalid + em {
+	display: block;
+	text-align: right;
+	font-weight: 400;
+	font-size: 0.7rem;
+	margin-top: 4px;
+	color: var(--red);
+}
+
+.form-container li:has(input:invalid):after  {
+	content: url(images/icon-error.svg);
+	position: absolute;
+	right: 20px;
+	top: 16px;
 }
 
 .form-container button {
