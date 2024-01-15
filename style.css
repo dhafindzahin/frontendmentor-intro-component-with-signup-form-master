@@ -93,7 +93,7 @@
 .form-container input {
 	border-radius: 4px;
 	width: 100%;
-	padding: 20px 16px;
+	padding: 16px 20px;
 	font-weight: 600;
 	border: 2px solid var(--grayish-blue);
 }
@@ -119,6 +119,7 @@
 	font-size: 1rem;
 	font-weight: 600;
 	box-shadow: hsl(154, 50%, 50%) 0 4px;
+	letter-spacing: 0.05rem;
 }
 
 .form-footer {
@@ -180,7 +181,9 @@
 	}
 
 	.form-footer > p {
-		width: auto;
+		font-size: 0.7rem;
+		width: 100%;
+		padding: 0 8px;
 	}
 }
 
@@ -201,9 +204,5 @@
 
 	p {
 		font-size: 1.5rem;
-	}
-
-	.form-footer > p {
-		font-size: 1rem;
 	}
 }
