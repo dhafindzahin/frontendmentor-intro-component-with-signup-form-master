@@ -178,6 +178,10 @@
 		width: 50vw;
 	}
 
+	.promotion {
+		margin-top: -32px;
+	}
+
 	.form-container {
 		margin-bottom: 0;
 	}
