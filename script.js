@@ -8,3 +8,11 @@ submitBtn.addEventListener("click", () => {
 		}
 	});
 });
+
+formInput.forEach((input) => {
+	input.addEventListener("input", () => {
+		if (input.checkValidity() === true) {
+			input.classList.remove("invalid");
+		}
+	});
+});
