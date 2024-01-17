@@ -5,12 +5,15 @@ function checkEmail(userEmail) {
 	return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(userEmail) || userEmail === "";
 }
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", (e) => {
 	formInput.forEach((input) => {
 		if (!input.checkValidity() && input.type !== "email") {
 			input.classList.add("invalid");
 		} else if (input.type === "email" && checkEmail(input.value)) {
 			input.classList.add("invalid");
+		}
+		if (input.classList.contains("invalid")) {
+			e.preventDefault();
 		}
 	});
 });
