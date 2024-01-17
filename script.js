@@ -10,6 +10,7 @@ function formatInputName(string) {
 }
 
 submitBtn.addEventListener("click", (e) => {
+	let checkOnce = true;
 	inputField.forEach((inputField) => {
 		const input = inputField.getElementsByTagName("input")[0];
 		const warning = inputField.getElementsByTagName("em")[0];
@@ -23,6 +24,7 @@ submitBtn.addEventListener("click", (e) => {
 			input.classList.add("invalid");
 			warning.innerText =
 				"Look like this not an " + formatInputName(input.name);
+
 			if (input.value === "") {
 				warning.innerText = formatInputName(input.name) + " cannot be empty";
 			}
@@ -30,6 +32,12 @@ submitBtn.addEventListener("click", (e) => {
 
 		if (input.classList.contains("invalid")) {
 			e.preventDefault();
+		}
+
+		if (checkOnce && !input.checkValidity() | (input.type === 'email' && !emailValidity(input.value))) {
+			checkOnce = false;
+			console.log("tes");
+			input.focus();
 		}
 	});
 });
