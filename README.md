@@ -15,8 +15,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 		- [Useful resources](#useful-resources)
 	- [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,7 +28,7 @@ Users should be able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
 ### Links
-
+- [Solution URL](https://www.frontendmentor.io/solutions/resposive-form-using-flexbox-IeNRcDvlFP)
 - [Live Site URL](https://dhafindzahin.github.io/frontendmentor-intro-component-with-signup-form-master/)
 
 ## My process
