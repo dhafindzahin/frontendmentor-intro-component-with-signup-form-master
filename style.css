@@ -108,6 +108,7 @@
 
 .form-container input:invalid {
 	border-color: var(--red);
+	color: var(--red);
 }
 
 .form-container input::placeholder {
