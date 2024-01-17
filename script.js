@@ -16,7 +16,6 @@ submitBtn.addEventListener("click", (e) => {
 			e.preventDefault();
 		}
 	});
-	formInput.reverse().forEach((input) => input.reportValidity())
 });
 
 formInput.forEach((input) => {
