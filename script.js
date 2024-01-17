@@ -36,7 +36,6 @@ submitBtn.addEventListener("click", (e) => {
 
 inputField.forEach((inputField) => {
 	const input = inputField.getElementsByTagName("input")[0];
-	const warning = inputField.getElementsByTagName("em")[0];
 	input.addEventListener("input", () => {
 		if (input.checkValidity() && input.type !== "email") {
 			input.classList.remove("invalid");
