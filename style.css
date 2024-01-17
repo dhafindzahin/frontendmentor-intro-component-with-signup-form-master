@@ -37,11 +37,13 @@
 	font-weight: 700;
 	text-align: center;
 	width: 16ch;
+	line-height: 2.5rem;
+	margin-top: 10px;
 }
 
 .header > p {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 0 24px;
 	width: 36ch;
 }
@@ -129,7 +131,7 @@
 	color: var(--red);
 }
 
-.form-container li:has(input.invalid):after  {
+.form-container li:has(input.invalid):after {
 	content: url(images/icon-error.svg);
 	position: absolute;
 	right: 20px;
@@ -193,6 +195,7 @@
 		font-size: 3rem;
 		text-align: left;
 		width: 20ch;
+		line-height: 3.5rem;
 	}
 
 	.header > p {
