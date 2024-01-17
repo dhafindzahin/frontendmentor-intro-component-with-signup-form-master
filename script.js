@@ -7,7 +7,7 @@ function checkEmail(userEmail) {
 
 submitBtn.addEventListener("click", () => {
 	formInput.forEach((input) => {
-		if (!input.checkValidity() && input.type !== "email") {
+		if (!input.checkValidity()) {
 			input.classList.add("invalid");
 		} else if (input.type === "email" && checkEmail(input.value)) {
 			input.classList.add("invalid");
@@ -17,7 +17,7 @@ submitBtn.addEventListener("click", () => {
 
 formInput.forEach((input) => {
 	input.addEventListener("input", () => {
-		if (input.checkValidity() && input.type !== "email") {
+		if (input.checkValidity()) {
 			input.classList.remove("invalid");
 		} else if (input.type === "email" && checkEmail(input.value)) {
 			input.classList.remove("invalid");
