@@ -15,7 +15,7 @@ submitBtn.addEventListener("click", (e) => {
 			input.classList.add("invalid");
 			warning.innerText = formatInputName(input.name) + " cannot be empty";
 		}
-		if (input.validationMessage === "Please fill out this field.") {
+		if (input.validity.patternMismatch && input.type === "email") {
 			warning.innerText = "Look like this is not an " + formatInputName(input.name);
 		}
 		if (input.classList.contains("invalid")) {
