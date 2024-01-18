@@ -10,17 +10,18 @@ submitBtn.addEventListener("click", (e) => {
 	inputField.forEach((inputField) => {
 		const input = inputField.getElementsByTagName("input")[0];
 		const warning = inputField.getElementsByTagName("em")[0];
+		const inputName = formatInputName(input.name);
 
 		if (!input.checkValidity()) input.classList.add("invalid");
 
 		if (input.validity.valueMissing) {
-			warning.innerText = formatInputName(input.name) + " cannot be empty";
+			warning.innerText = inputName + " cannot be empty";
 		}
 		if (input.validity.patternMismatch) {
-			warning.innerText = "Look like this is not an " + formatInputName(input.name);
+			warning.innerText = "Look like this is not an " + inputName;
 		}
 		if (input.validity.tooShort) {
-			warning.innerText = formatInputName(input.name) + " need to be longer than " + input.minLength + " character";
+			warning.innerText = inputName + " need to be longer than " + input.minLength + " character";
 		}
 		if (input.classList.contains("invalid")) {
 			e.preventDefault();
