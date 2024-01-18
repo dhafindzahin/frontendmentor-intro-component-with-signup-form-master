@@ -11,8 +11,9 @@ submitBtn.addEventListener("click", (e) => {
 		const input = inputField.getElementsByTagName("input")[0];
 		const warning = inputField.getElementsByTagName("em")[0];
 
-		if (!input.checkValidity()) {
-			input.classList.add("invalid");
+		if (!input.checkValidity()) input.classList.add("invalid");
+
+		if (input.validity.valueMissing) {
 			warning.innerText = formatInputName(input.name) + " cannot be empty";
 		}
 		if (input.validity.patternMismatch && input.type === "email") {
