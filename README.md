@@ -31,6 +31,7 @@ Users should be able to:
 #### Extra challenge
 
 - Password need to be a minimal of 8 character
+- Make invalid warning show up when blur from input
 
 ### Links
 - [Solution URL](https://www.frontendmentor.io/solutions/resposive-form-using-flexbox-IeNRcDvlFP)
