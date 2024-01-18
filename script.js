@@ -16,8 +16,11 @@ submitBtn.addEventListener("click", (e) => {
 		if (input.validity.valueMissing) {
 			warning.innerText = formatInputName(input.name) + " cannot be empty";
 		}
-		if (input.validity.patternMismatch && input.type === "email") {
+		if (input.validity.patternMismatch) {
 			warning.innerText = "Look like this is not an " + formatInputName(input.name);
+		}
+		if (input.validity.tooShort) {
+			warning.innerText = formatInputName(input.name) + " need to be longer than " + input.minLength + " character";
 		}
 		if (input.classList.contains("invalid")) {
 			e.preventDefault();
