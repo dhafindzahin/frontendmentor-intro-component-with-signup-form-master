@@ -62,4 +62,4 @@ Users should be able to:
 
 - Frontend Mentor - [dhafindzahin](https://www.frontendmentor.io/profile/dhafindzahin)
 - Linkendin - [dhafin dzahin](https://www.linkedin.com/in/dhafin-dzahin-30b4b1291/)
-- Linkendin - [dhafindzahin](https://github.com/dhafindzahin)
+- Github - [dhafindzahin](https://github.com/dhafindzahin)
